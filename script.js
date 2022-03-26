@@ -2,8 +2,8 @@ function startTime() {
     var today = new Date();
     var hr = today.getHours();
     var min = today.getMinutes();
-    var sec = today.getSeconds();
-if (sec == 13){sec=12}
+    
+
 if (min == 13){min="<3"}
     ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
     hr = (hr == 0) ? 12 : hr;
@@ -11,7 +11,6 @@ if (min == 13){min="<3"}
     //Add a zero in front of numbers<10
     hr = checkTime(hr);
     min = checkTime(min);
-    sec = checkTime(sec);
     document.getElementById("clock").innerHTML = hr + ":" + min + " " + ap;
     
     var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
