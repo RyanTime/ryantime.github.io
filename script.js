@@ -4,7 +4,7 @@ function startTime() {
     var min = today.getMinutes();
     
 
-if (min == 13){min="<3"}
+if (min == 13){min="**"}
     ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
     hr = (hr == 0) ? 12 : hr;
     hr = (hr > 12) ? hr - 12 : hr;
@@ -17,7 +17,7 @@ if (min == 13){min="<3"}
     var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     var curWeekDay = days[today.getDay()];
     var curDay = today.getDate();
-if (curDay == 13){curDay="<3"}
+if (curDay == 13){curDay="**"}
     var curMonth = months[today.getMonth()];
     var curYear = today.getFullYear();
     var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
