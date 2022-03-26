@@ -18,6 +18,7 @@ if (min == 13){min="<3"}
     var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     var curWeekDay = days[today.getDay()];
     var curDay = today.getDate();
+if (curDay == 13){curDay="<3"}
     var curMonth = months[today.getMonth()];
     var curYear = today.getFullYear();
     var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
